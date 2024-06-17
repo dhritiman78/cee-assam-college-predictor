@@ -6,6 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;}
+    .navheading {
+      text-align: center;
+      color: white;
+      font-size: 2rem;
+    }
+    .nav {
+      background-color: #007BFF;
+      margin: 0;
+      padding: 1rem;
+    }
+    .headingpara {
+      text-align: center;
+      color: white;
+      font-size: 1rem;
+    }
         body {
             background-color: #F6F6F6;
             font-family: 'Arial', sans-serif;
@@ -67,12 +86,15 @@
     </style>
 </head>
 <body>
-    <?php include "components/nav.php"; ?>
+    <div class="nav">
+    <h1 class="navheading">College Predictor</h1>
+    <p class="headingpara">For colleges under ASTU</p>
+  </div>
     <div class="maindiv">
         <h1>Enter your CEE 2024 rank and caste</h1>
         <h3>Enter here</h3>
         <hr>
-        <form action="cee-assam-college-prediction.free.nf/Colleges.php" method="post">
+        <form action="https://cee-assam-college-prediction.free.nf/Colleges.php" method="post">
             <div class="formbox">
                 <label for="rank">Enter your rank</label>
                 <input type="text" name="rank" id="rank" placeholder="Enter your rank">
